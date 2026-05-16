@@ -1,0 +1,50 @@
+# Math Web Application - Dependencies
+
+## Frontend (React + Vite)
+# Core Dependencies
+react==19.2.6
+react-dom==19.2.6
+
+# Development Dependencies
+@vitejs/plugin-react==6.0.1
+vite==8.0.12
+eslint==10.3.0
+eslint-plugin-react-hooks==7.1.1
+eslint-plugin-react-refresh==0.5.2
+@babel/core==7.29.0
+babel-plugin-react-compiler==1.0.0
+
+## Backend (Node.js + Express)
+express==5.2.1
+
+## Optional (for enhanced development)
+# cors - for handling CORS
+# body-parser - for parsing request bodies
+# dotenv - for environment variables
+# nodemon - for auto-reloading during development
+
+## Installation Instructions
+
+### For Frontend:
+cd client
+npm install
+
+### For Backend:
+cd server
+npm install
+
+## Running the Application
+
+### Development Mode:
+# Terminal 1 - Frontend (port 5173)
+cd client
+npm run dev
+
+# Terminal 2 - Backend (port 5000)
+cd server
+npm start
+
+### Production Build:
+cd client
+npm run build
+npm run preview

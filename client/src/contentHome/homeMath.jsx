@@ -16,7 +16,7 @@ export default function MathHome({ items, title }) {
               <div className="card-icon">{item.card_icon}</div>
               <h3>{item.name}</h3>
               <p>{item.description}</p>
-              <Link to="/quizCalc">
+              <Link to={item.link}>
                 <button className="card-btn">Learn More →</button>
               </Link>
             </div>

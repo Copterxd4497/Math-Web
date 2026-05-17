@@ -4,6 +4,7 @@
 # Core Dependencies
 react==19.2.6
 react-dom==19.2.6
+npm install react-router-dom
 
 # Development Dependencies
 @vitejs/plugin-react==6.0.1

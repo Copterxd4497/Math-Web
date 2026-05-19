@@ -1,8 +1,8 @@
 import { useState } from "react";
 import NavBarContent from "../navbarContent/navbarContent";
-import "./calculusHome.css";
+import "./factoringHome.css";
 
-export default function CalculusQuiz() {
+export default function FactoringHome() {
   const [activeTab, setActiveTab] = useState("quiz");
 
   const renderContent = () => {
@@ -10,9 +10,10 @@ export default function CalculusQuiz() {
       case "quiz":
         return (
           <div className="content-section">
-            <h2>Calculus Quiz</h2>
+            <h2>Factoring Quiz</h2>
             <p>
-              Welcome to the Calculus Quiz section. Test your knowledge here!
+              Welcome to the Factoring Quiz section. Test your factoring skills
+              here!
             </p>
             <div className="quiz-area">
               {/* Quiz content will go here */}
@@ -24,7 +25,7 @@ export default function CalculusQuiz() {
         return (
           <div className="content-section">
             <h2>Explanations</h2>
-            <p>Learn calculus concepts with detailed explanations.</p>
+            <p>Learn factoring concepts with detailed explanations.</p>
             <div className="explanation-area">
               {/* Explanation content will go here */}
               <p>Detailed explanations and tutorials will be displayed here.</p>
@@ -48,7 +49,7 @@ export default function CalculusQuiz() {
   };
 
   return (
-    <div className="calculus-container">
+    <div className="factoring-container">
       <NavBarContent activeTab={activeTab} setActiveTab={setActiveTab} />
       <div className="content-wrapper">{renderContent()}</div>
     </div>

@@ -8,7 +8,7 @@ const data = {
     },
     {
       card_icon: "✕",
-      link: "/quizCalc",
+      link: "/quizFactor",
       name: "Factoring",
       description:
         "Solve all types of math equations with factoring techniques",

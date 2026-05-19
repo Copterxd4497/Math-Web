@@ -1,0 +1,76 @@
+.navbar-content {
+  width: 100%;
+  background: #1a1f26;
+  border-bottom: 2px solid rgba(0, 212, 255, 0.2);
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.home-button {
+  padding: 1rem 1.5rem;
+  background: none;
+  border: none;
+  color: #a0a0a0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+  text-transform: capitalize;
+  border-right: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+.home-button:hover {
+  background: rgba(0, 212, 255, 0.05);
+  color: #00d4ff;
+}
+
+.tabs-container {
+  display: flex;
+  gap: 0;
+  margin-left: auto;
+}
+
+.nav-tab {
+  padding: 1rem 1.5rem;
+  background: none;
+  border: none;
+  color: #a0a0a0;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+  text-transform: capitalize;
+}
+
+.nav-tab:hover {
+  background: rgba(0, 212, 255, 0.05);
+  color: #00d4ff;
+}
+
+.nav-tab.active {
+  color: #00d4ff;
+  border-bottom: 3px solid #00d4ff;
+  background: rgba(0, 212, 255, 0.05);
+}
+
+@media (max-width: 768px) {
+  .home-button {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .nav-tab {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+}

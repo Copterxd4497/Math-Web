@@ -2,9 +2,10 @@ import { useEffect, useState } from "react";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import MathHome from "./contentHome/homeMath";
-import SideBarMenu from "./sideBarMenu/sideBarMenu";
+import MathHome from "./contentHome/homeMath.jsx";
+import SideBarMenu from "./sideBarMenu/sideBarMenu.jsx";
 import CalculusQuiz from "./calculusHome/calculusHome.jsx";
+import FactoringHome from "./factoringHome/factoringHome.jsx";
 
 import data from "./../data/data.js";
 
@@ -39,6 +40,7 @@ export default function App() {
 
         {/* This is a Route to quizCalcPage */}
         <Route path="/quizCalc" element={<CalculusQuiz />} />
+        <Route path="/quizFactor" element={<FactoringHome />} />
       </Routes>
     </BrowserRouter>
   );

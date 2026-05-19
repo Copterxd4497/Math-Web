@@ -8,6 +8,7 @@ import CalculusQuiz from "./calculusHome/calculusHome.jsx";
 import FactoringHome from "./factoringHome/factoringHome.jsx";
 
 import data from "./../data/data.js";
+import calcData from "../data/calcData.js";
 
 import "./app.css";
 
@@ -15,6 +16,7 @@ export default function App() {
   const [message, setMessage] = useState("");
   const [activeMenu, setActiveMenu] = useState("math");
   const [section, setSection] = useState("math");
+  const [calcState, setCalcState] = useState("CalculusQuiz");
 
   useEffect(() => {
     fetch("http://localhost:5000/api/test")
@@ -39,13 +41,22 @@ export default function App() {
         />
 
         {/* This is a Route to quizCalcPage */}
-        <Route path="/quizCalc" element={<CalculusQuiz />} />
+        <Route
+          path="/quizCalc"
+          element={
+            <CalculusQuiz
+              title={calcData.CalculusQuiz.title}
+              topics={calcData.CalculusQuiz.topics}
+            />
+          }
+        />
         <Route path="/quizFactor" element={<FactoringHome />} />
       </Routes>
     </BrowserRouter>
   );
 }
 
+//HomePage
 function Home({ section, setSection, activeMenu, setActiveMenu }) {
   return (
     <div className="app-container">

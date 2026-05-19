@@ -1,61 +1,124 @@
 const calcData = {
-  math: [
-    {
-      card_icon: "∑",
-      link: "/",
-      name: "Calculus",
-      description: "Master derivative calculus and understand rates of change",
+  CalculusQuiz: {
+    title: "Calculus Quiz",
+
+    topics: {
+      calculusTangentLine: {
+        link: "/CalculusTangentLineLink",
+        explanation:
+          "Practice finding tangent line equations using derivatives and slope formulas.",
+        tutorial: "/tutorials/calculus-tangent-line",
+      },
+
+      polynomialDerivative: {
+        link: "/Polynomial_derivative",
+        explanation:
+          "Learn how to differentiate polynomial functions step by step.",
+        tutorial: "/tutorials/polynomial-derivative",
+      },
+
+      powerRuleDiff: {
+        link: "/powerRule",
+        explanation:
+          "Master the power rule for derivatives and simplify differentiation problems.",
+        tutorial: "/tutorials/power-rule",
+      },
+
+      calcDiff: {
+        link: "/calcDiff",
+        explanation:
+          "General differentiation practice involving multiple derivative techniques.",
+        tutorial: "/tutorials/calculus-differentiation",
+      },
+
+      productRule: {
+        link: "/productRule",
+        explanation:
+          "Differentiate functions involving multiplication using the product rule.",
+        tutorial: "/tutorials/product-rule",
+      },
+
+      quotientRule: {
+        link: "/quotientRule",
+        explanation:
+          "Solve derivative problems involving fractions and rational functions.",
+        tutorial: "/tutorials/quotient-rule",
+      },
+
+      chainRule: {
+        link: "/chainRule",
+        explanation:
+          "Understand composite functions and apply the chain rule correctly.",
+        tutorial: "/tutorials/chain-rule",
+      },
     },
-    {
-      card_icon: "✕",
-      link: "/quizCalc",
-      name: "Factoring",
-      description:
-        "Solve all types of math equations with factoring techniques",
+  },
+
+  CalculusExplanation: {
+    title: "Calculus Explanations",
+
+    topics: {
+      limits: {
+        link: "/limits",
+        explanation:
+          "Introduction to limits and understanding function behavior near points.",
+        tutorial: "/tutorials/limits",
+      },
+
+      derivatives: {
+        link: "/derivatives",
+        explanation:
+          "Understand derivatives as rates of change and slopes of curves.",
+        tutorial: "/tutorials/derivatives",
+      },
+
+      integrals: {
+        link: "/integrals",
+        explanation:
+          "Learn the basics of integration and area under the curve.",
+        tutorial: "/tutorials/integrals",
+      },
+
+      continuity: {
+        link: "/continuity",
+        explanation:
+          "Study continuous functions and discontinuities in calculus.",
+        tutorial: "/tutorials/continuity",
+      },
     },
-  ],
-  statistics: [
-    {
-      card_icon: "📊",
-      link: "/",
-      name: "Statistics",
-      description: "Learn about data analysis and statistical methods",
+  },
+
+  SolvedEquation: {
+    title: "Solved Equations",
+
+    topics: {
+      linearEquation: {
+        link: "/linearEquation",
+        explanation: "Solve single-variable linear equations step by step.",
+        tutorial: "/tutorials/linear-equation",
+      },
+
+      quadraticEquation: {
+        link: "/quadraticEquation",
+        explanation:
+          "Practice solving quadratic equations using factoring and formulas.",
+        tutorial: "/tutorials/quadratic-equation",
+      },
+
+      systemOfEquations: {
+        link: "/systemOfEquations",
+        explanation:
+          "Solve systems of equations using substitution and elimination methods.",
+        tutorial: "/tutorials/system-of-equations",
+      },
+
+      inequalities: {
+        link: "/inequalities",
+        explanation: "Learn how to solve and graph algebraic inequalities.",
+        tutorial: "/tutorials/inequalities",
+      },
     },
-    {
-      card_icon: "🎲",
-      link: "/",
-      name: "Probability",
-      description: "Understanding random events and probability concepts",
-    },
-  ],
-  geometry: [
-    {
-      card_icon: "△",
-      link: "/",
-      name: "Triangles",
-      description: "Master triangle properties and theorems",
-    },
-    {
-      card_icon: "⬜",
-      link: "/",
-      name: "Shapes",
-      description: "Learn about various geometric shapes and their properties",
-    },
-  ],
-  algebra: [
-    {
-      card_icon: "ƒ",
-      link: "/",
-      name: "Functions",
-      description: "Understand functions and their applications",
-    },
-    {
-      card_icon: "x",
-      link: "/",
-      name: "Equations",
-      description: "Solve linear and quadratic equations",
-    },
-  ],
+  },
 };
 
 export default calcData;

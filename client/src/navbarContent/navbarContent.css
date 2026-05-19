@@ -1,8 +1,9 @@
 .navbar-content {
   width: 100%;
-  background: #1a1f26;
-  border-bottom: 2px solid rgba(0, 212, 255, 0.2);
+  background: linear-gradient(90deg, #1a1f26 0%, #1e2936 100%);
+  border-bottom: 2px solid rgba(0, 212, 255, 0.3);
   padding: 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
 .navbar {
@@ -12,65 +13,93 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  height: 70px;
 }
 
 .home-button {
-  padding: 1rem 1.5rem;
+  padding: 0 1.5rem;
+  height: 100%;
   background: none;
   border: none;
   color: #a0a0a0;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   border-bottom: 3px solid transparent;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   border-right: 1px solid rgba(0, 212, 255, 0.2);
+  display: flex;
+  align-items: center;
 }
 
 .home-button:hover {
-  background: rgba(0, 212, 255, 0.05);
+  background: rgba(0, 212, 255, 0.08);
   color: #00d4ff;
+  border-bottom-color: #00d4ff;
 }
 
 .tabs-container {
   display: flex;
   gap: 0;
   margin-left: auto;
+  height: 100%;
+  align-items: center;
 }
 
 .nav-tab {
-  padding: 1rem 1.5rem;
+  padding: 0 1.5rem;
+  height: 100%;
   background: none;
   border: none;
   color: #a0a0a0;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 0.95rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   border-bottom: 3px solid transparent;
   text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .nav-tab:hover {
-  background: rgba(0, 212, 255, 0.05);
+  background: rgba(0, 212, 255, 0.08);
   color: #00d4ff;
 }
 
 .nav-tab.active {
   color: #00d4ff;
   border-bottom: 3px solid #00d4ff;
-  background: rgba(0, 212, 255, 0.05);
+  background: rgba(0, 212, 255, 0.1);
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    flex-wrap: wrap;
+  }
+
   .home-button {
-    padding: 0.75rem 1rem;
+    padding: 1rem;
     font-size: 0.9rem;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+  }
+
+  .tabs-container {
+    width: 100%;
+    margin-left: 0;
+    height: auto;
   }
 
   .nav-tab {
-    padding: 0.75rem 1rem;
-    font-size: 0.9rem;
+    padding: 1rem;
+    font-size: 0.85rem;
+    height: auto;
+    flex: 1;
   }
 }

@@ -88,6 +88,7 @@ const calcData = {
     },
   },
 
+  ///what sub you
   SolvedEquation: {
     title: "Solved Equations",
 

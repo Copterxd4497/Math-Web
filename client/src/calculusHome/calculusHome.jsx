@@ -29,11 +29,14 @@ export default function CalculusQuiz({ title, topics }) {
           </div>
         );
 
+      //cutttttttttttttttttttttttttttttt
+
       case "explanation":
         return (
           <div className="content-section">
             <h2>{title} - Explanations</h2>
             <p>Detailed explanations and theory.</p>
+
             <div className="topics-grid">
               {Object.values(topics).map((item, index) => (
                 <div className="card" key={index}>

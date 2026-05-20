@@ -5,10 +5,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MathHome from "./contentHome/homeMath.jsx";
 import SideBarMenu from "./sideBarMenu/sideBarMenu.jsx";
 import CalculusQuiz from "./calculusHome/calculusHome.jsx";
-import FactoringHome from "./factoringHome/factoringHome.jsx";
+import FactoringQuiz from "./factoringHome/factoringHome.jsx";
 
 import data from "./../data/data.js";
 import calcData from "../data/calcData.js";
+import factorData from "../data/factorData.js";
 
 import "./app.css";
 
@@ -50,7 +51,17 @@ export default function App() {
             />
           }
         />
-        <Route path="/quizFactor" element={<FactoringHome />} />
+
+        {/*This is a Route to quizFacterPage*/}
+        <Route
+          path="/quizFactor"
+          element={
+            <FactoringQuiz
+              title={factorData.FactorQuiz.title}
+              topics={factorData.FactorQuiz.topics}
+            />
+          }
+        />
       </Routes>
     </BrowserRouter>
   );

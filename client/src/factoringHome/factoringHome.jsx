@@ -2,7 +2,7 @@ import { useState } from "react";
 import NavBarContent from "../navbarContent/navbarContent";
 import "./factoringHome.css";
 
-export default function FactoringHome() {
+export default function FactoringQuiz({ title, topics }) {
   const [activeTab, setActiveTab] = useState("quiz");
 
   const renderContent = () => {
@@ -10,36 +10,69 @@ export default function FactoringHome() {
       case "quiz":
         return (
           <div className="content-section">
-            <h2>Factoring Quiz</h2>
+            <h2>{title}</h2>
             <p>
               Welcome to the Factoring Quiz section. Test your factoring skills
-              here!
+              here! fuckyou
             </p>
-            <div className="quiz-area">
-              {/* Quiz content will go here */}
-              <p>Quiz questions and problems will be displayed here.</p>
+
+            <div className="topics-gird">
+              {Object.values(topics).map((item, index) => {
+                <div className="card" key={index}>
+                  <h3>{item.explanation}</h3>
+                  <a href={item.link} className="btn primary">
+                    Start Practice
+                  </a>
+                  <a href={item.tutorial} className="btn secondary">
+                    View Tutorial
+                  </a>
+                </div>;
+              })}
             </div>
           </div>
         );
+
+      //cuttttttttttttttttttttttttttttttttttttttttt
+
       case "explanation":
         return (
           <div className="content-section">
-            <h2>Explanations</h2>
+            <h2>{title} - Explanations</h2>
             <p>Learn factoring concepts with detailed explanations.</p>
-            <div className="explanation-area">
-              {/* Explanation content will go here */}
-              <p>Detailed explanations and tutorials will be displayed here.</p>
+
+            <div className="topics-grid">
+              {Object.values(topics).map((item, index) => {
+                <div className="card" key={index}>
+                  <h3>{item.explanation}</h3>
+                  <a href={item.link} className="btn primay">
+                    Read Explanation
+                  </a>
+                  <a href={item.tutorial} className="btn secondary">
+                    {" "}
+                    Tutorial
+                  </a>
+                </div>;
+              })}
             </div>
           </div>
         );
+
+      //cutttttttttttttttttttttttttttttttttttttttt
       case "equations":
         return (
           <div className="content-section">
-            <h2>Solved Equations</h2>
+            <h2> {title} - Solved Equations</h2>
             <p>Browse through solved equations and examples.</p>
-            <div className="equations-area">
-              {/* Solved equations will go here */}
-              <p>Step-by-step solved equations will be displayed here.</p>
+
+            <div className="topics-grid">
+              {Object.values(topics).map((item, index) => {
+                <div className="card" key={index}>
+                  <h3>{item.explantion}</h3>
+                  <a href={item.link} className="btn primay">
+                    View Solution
+                  </a>
+                </div>;
+              })}
             </div>
           </div>
         );

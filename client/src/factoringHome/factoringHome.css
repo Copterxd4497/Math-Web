@@ -20,7 +20,7 @@
 
 .content-section h2 {
   font-size: 2.8rem;
-  color: #00d4ff;
+  color: #6b7a8f;
   margin-bottom: 0.5rem;
   font-weight: 700;
   letter-spacing: -0.5px;
@@ -52,7 +52,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid rgba(0, 212, 255, 0.1);
+  border: 1px solid rgba(107, 122, 143, 0.1);
   min-height: 280px;
 }
 
@@ -63,15 +63,15 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: rgba(0, 212, 255, 0.08);
+  background: rgba(107, 122, 143, 0.08);
   transition: left 0.4s ease;
   z-index: 0;
 }
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 16px 48px rgba(0, 212, 255, 0.2);
-  border-color: rgba(0, 212, 255, 0.4);
+  box-shadow: 0 16px 48px rgba(107, 122, 143, 0.2);
+  border-color: rgba(107, 122, 143, 0.4);
 }
 
 .card:hover::before {
@@ -105,25 +105,25 @@
 }
 
 .btn.primary {
-  background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
-  color: #0f1419;
+  background: linear-gradient(135deg, #6b7a8f 0%, #556b7f 100%);
+  color: #ffffff;
   font-weight: 700;
 }
 
 .btn.primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 212, 255, 0.3);
+  box-shadow: 0 6px 16px rgba(107, 122, 143, 0.3);
 }
 
 .btn.secondary {
-  background: rgba(0, 212, 255, 0.1);
-  color: #00d4ff;
-  border: 1px solid rgba(0, 212, 255, 0.3);
+  background: rgba(107, 122, 143, 0.1);
+  color: #6b7a8f;
+  border: 1px solid rgba(107, 122, 143, 0.3);
 }
 
 .btn.secondary:hover {
-  background: rgba(0, 212, 255, 0.2);
-  border-color: rgba(0, 212, 255, 0.6);
+  background: rgba(107, 122, 143, 0.2);
+  border-color: rgba(107, 122, 143, 0.6);
   transform: translateY(-2px);
 }
 

@@ -1,7 +1,7 @@
 .navbar-content {
   width: 100%;
   background: linear-gradient(90deg, #1a1f26 0%, #1e2936 100%);
-  border-bottom: 2px solid rgba(0, 212, 255, 0.3);
+  border-bottom: 2px solid rgba(107, 122, 143, 0.3);
   padding: 0;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
@@ -29,15 +29,15 @@
   border-bottom: 3px solid transparent;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  border-right: 1px solid rgba(0, 212, 255, 0.2);
+  border-right: 1px solid rgba(107, 122, 143, 0.2);
   display: flex;
   align-items: center;
 }
 
 .home-button:hover {
-  background: rgba(0, 212, 255, 0.08);
-  color: #00d4ff;
-  border-bottom-color: #00d4ff;
+  background: rgba(107, 122, 143, 0.08);
+  color: #6b7a8f;
+  border-bottom-color: #6b7a8f;
 }
 
 .tabs-container {
@@ -66,14 +66,14 @@
 }
 
 .nav-tab:hover {
-  background: rgba(0, 212, 255, 0.08);
-  color: #00d4ff;
+  background: rgba(107, 122, 143, 0.08);
+  color: #6b7a8f;
 }
 
 .nav-tab.active {
-  color: #00d4ff;
-  border-bottom: 3px solid #00d4ff;
-  background: rgba(0, 212, 255, 0.1);
+  color: #6b7a8f;
+  border-bottom: 3px solid #6b7a8f;
+  background: rgba(107, 122, 143, 0.1);
 }
 
 @media (max-width: 768px) {
@@ -87,7 +87,7 @@
     font-size: 0.9rem;
     height: auto;
     border-right: none;
-    border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+    border-bottom: 1px solid rgba(107, 122, 143, 0.2);
   }
 
   .tabs-container {

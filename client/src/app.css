@@ -46,14 +46,14 @@ body {
     padding: 1rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
     border-right: none;
-    border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+    border-bottom: 1px solid rgba(107, 122, 143, 0.1);
   }
 
   .sidebar-header {
     margin-bottom: 0;
     padding-bottom: 0;
     border-bottom: none;
-    border-right: 1px solid rgba(0, 212, 255, 0.1);
+    border-right: 1px solid rgba(107, 122, 143, 0.1);
     padding-right: 1.5rem;
     margin-right: 1.5rem;
   }

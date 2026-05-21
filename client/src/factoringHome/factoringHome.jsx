@@ -13,11 +13,11 @@ export default function FactoringQuiz({ title, topics }) {
             <h2>{title}</h2>
             <p>
               Welcome to the Factoring Quiz section. Test your factoring skills
-              here! fuckyou
+              here!
             </p>
 
-            <div className="topics-gird">
-              {Object.values(topics).map((item, index) => {
+            <div className="topics-grid">
+              {Object.values(topics).map((item, index) => (
                 <div className="card" key={index}>
                   <h3>{item.explanation}</h3>
                   <a href={item.link} className="btn primary">
@@ -26,13 +26,11 @@ export default function FactoringQuiz({ title, topics }) {
                   <a href={item.tutorial} className="btn secondary">
                     View Tutorial
                   </a>
-                </div>;
-              })}
+                </div>
+              ))}
             </div>
           </div>
         );
-
-      //cuttttttttttttttttttttttttttttttttttttttttt
 
       case "explanation":
         return (
@@ -41,23 +39,21 @@ export default function FactoringQuiz({ title, topics }) {
             <p>Learn factoring concepts with detailed explanations.</p>
 
             <div className="topics-grid">
-              {Object.values(topics).map((item, index) => {
+              {Object.values(topics).map((item, index) => (
                 <div className="card" key={index}>
                   <h3>{item.explanation}</h3>
-                  <a href={item.link} className="btn primay">
+                  <a href={item.link} className="btn primary">
                     Read Explanation
                   </a>
                   <a href={item.tutorial} className="btn secondary">
-                    {" "}
                     Tutorial
                   </a>
-                </div>;
-              })}
+                </div>
+              ))}
             </div>
           </div>
         );
 
-      //cutttttttttttttttttttttttttttttttttttttttt
       case "equations":
         return (
           <div className="content-section">
@@ -65,14 +61,14 @@ export default function FactoringQuiz({ title, topics }) {
             <p>Browse through solved equations and examples.</p>
 
             <div className="topics-grid">
-              {Object.values(topics).map((item, index) => {
+              {Object.values(topics).map((item, index) => (
                 <div className="card" key={index}>
-                  <h3>{item.explantion}</h3>
-                  <a href={item.link} className="btn primay">
+                  <h3>{item.explanation}</h3>
+                  <a href={item.link} className="btn primary">
                     View Solution
                   </a>
-                </div>;
-              })}
+                </div>
+              ))}
             </div>
           </div>
         );

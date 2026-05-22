@@ -2,6 +2,8 @@
 
 A full-stack web application for learning mathematics, featuring interactive lessons, code editor, and quizzes on calculus and factoring concepts.
 
+## MathWeb version 1.0
+
 ## Features
 
 - **Calculus Learning**: Interactive calculus lessons and tutorials

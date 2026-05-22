@@ -7,6 +7,7 @@ import SideBarMenu from "./sideBarMenu/sideBarMenu.jsx";
 import CalculusQuiz from "./calculusHome/calculusHome.jsx";
 import FactoringQuiz from "./factoringHome/factoringHome.jsx";
 import Calc1_tangent_Line_Quiz from "./Quizs/calculusQuiz/calcQuiz.jsx";
+import CodeEditor from "./codeEditor.jsx";
 
 import data from "./../data/data.js";
 import calcData from "../data/calcData.js";
@@ -72,6 +73,9 @@ export default function App() {
             <Calc1_tangent_Line_Quiz quizes={Calc1_tangent_Line_QuizData} />
           }
         />
+
+        {/* This is a Route to Code Editor page */}
+        <Route path="/codeEditor" element={<CodeEditor />} />
       </Routes>
     </BrowserRouter>
   );

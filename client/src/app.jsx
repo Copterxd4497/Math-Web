@@ -6,10 +6,12 @@ import MathHome from "./contentHome/homeMath.jsx";
 import SideBarMenu from "./sideBarMenu/sideBarMenu.jsx";
 import CalculusQuiz from "./calculusHome/calculusHome.jsx";
 import FactoringQuiz from "./factoringHome/factoringHome.jsx";
+import Calc1_tangent_Line_Quiz from "./Quizs/calculusQuiz/calcQuiz.jsx";
 
 import data from "./../data/data.js";
 import calcData from "../data/calcData.js";
 import factorData from "../data/factorData.js";
+import Calc1_tangent_Line_QuizData from "../data/quizData/calcQuizData.js";
 
 import "./app.css";
 
@@ -60,6 +62,14 @@ export default function App() {
               title={factorData.FactorQuiz.title}
               topics={factorData.FactorQuiz.topics}
             />
+          }
+        />
+
+        {/* This is a Route to calcQuestion page */}
+        <Route
+          path="/calcQuestion"
+          element={
+            <Calc1_tangent_Line_Quiz quizes={Calc1_tangent_Line_QuizData} />
           }
         />
       </Routes>

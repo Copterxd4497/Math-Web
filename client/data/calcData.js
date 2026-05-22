@@ -4,6 +4,7 @@ const calcData = {
 
     topics: {
       calculusTangentLine: {
+        linkQuestion: "/calcQuestion",
         link: "/CalculusTangentLineLink",
         explanation:
           "Practice finding tangent line equations using derivatives and slope formulas.",
@@ -11,6 +12,7 @@ const calcData = {
       },
 
       polynomialDerivative: {
+        linkQuestion: "/",
         link: "/Polynomial_derivative",
         explanation:
           "Learn how to differentiate polynomial functions step by step.",
@@ -18,6 +20,7 @@ const calcData = {
       },
 
       powerRuleDiff: {
+        linkQuestion: "/",
         link: "/powerRule",
         explanation:
           "Master the power rule for derivatives and simplify differentiation problems.",
@@ -25,6 +28,7 @@ const calcData = {
       },
 
       calcDiff: {
+        linkQuestion: "/",
         link: "/calcDiff",
         explanation:
           "General differentiation practice involving multiple derivative techniques.",
@@ -32,6 +36,7 @@ const calcData = {
       },
 
       productRule: {
+        linkQuestion: "/",
         link: "/productRule",
         explanation:
           "Differentiate functions involving multiplication using the product rule.",
@@ -39,6 +44,7 @@ const calcData = {
       },
 
       quotientRule: {
+        linkQuestion: "/",
         link: "/quotientRule",
         explanation:
           "Solve derivative problems involving fractions and rational functions.",
@@ -46,6 +52,7 @@ const calcData = {
       },
 
       chainRule: {
+        linkQuestion: "/",
         link: "/chainRule",
         explanation:
           "Understand composite functions and apply the chain rule correctly.",
@@ -59,28 +66,28 @@ const calcData = {
 
     topics: {
       limits: {
-        link: "/limits",
+        link: "/",
         explanation:
           "Introduction to limits and understanding function behavior near points.",
         tutorial: "/tutorials/limits",
       },
 
       derivatives: {
-        link: "/derivatives",
+        link: "/",
         explanation:
           "Understand derivatives as rates of change and slopes of curves.",
         tutorial: "/tutorials/derivatives",
       },
 
       integrals: {
-        link: "/integrals",
+        link: "/",
         explanation:
           "Learn the basics of integration and area under the curve.",
         tutorial: "/tutorials/integrals",
       },
 
       continuity: {
-        link: "/continuity",
+        link: "/",
         explanation:
           "Study continuous functions and discontinuities in calculus.",
         tutorial: "/tutorials/continuity",
@@ -94,27 +101,27 @@ const calcData = {
 
     topics: {
       linearEquation: {
-        link: "/linearEquation",
+        link: "/",
         explanation: "Solve single-variable linear equations step by step.",
         tutorial: "/tutorials/linear-equation",
       },
 
       quadraticEquation: {
-        link: "/quadraticEquation",
+        link: "/",
         explanation:
           "Practice solving quadratic equations using factoring and formulas.",
         tutorial: "/tutorials/quadratic-equation",
       },
 
       systemOfEquations: {
-        link: "/systemOfEquations",
+        link: "/",
         explanation:
           "Solve systems of equations using substitution and elimination methods.",
         tutorial: "/tutorials/system-of-equations",
       },
 
       inequalities: {
-        link: "/inequalities",
+        link: "/",
         explanation: "Learn how to solve and graph algebraic inequalities.",
         tutorial: "/tutorials/inequalities",
       },

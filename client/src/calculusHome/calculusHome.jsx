@@ -1,9 +1,15 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import NavBarContent from "../navbarContent/navbarContent";
 import "./calculusHome.css";
 
 export default function CalculusQuiz({ title, topics }) {
   const [activeTab, setActiveTab] = useState("quiz");
+  const navigate = useNavigate();
+
+  const handleQuizStart = (topic) => {
+    navigate(topic.linkQuestion, { state: { topic } });
+  };
 
   const renderContent = () => {
     switch (activeTab) {
@@ -17,9 +23,12 @@ export default function CalculusQuiz({ title, topics }) {
               {Object.values(topics).map((item, index) => (
                 <div className="card" key={index}>
                   <h3>{item.explanation}</h3>
-                  <a href={item.link} className="btn primary">
+                  <button
+                    onClick={() => handleQuizStart(item)}
+                    className="btn primary"
+                  >
                     Start Practice
-                  </a>
+                  </button>
                   <a href={item.tutorial} className="btn secondary">
                     View Tutorial
                   </a>
